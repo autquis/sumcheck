@@ -33,9 +33,9 @@ pub struct PState {
     pub round: usize
 }
 
-// fn reduce_poly(&mut poly: SparsePolynomial<Fq, SparseTerm>, &mut pstate: PState) {
-//     // SparsePolynomial::
-// }
+fn reduce_poly(poly: &mut SparsePolynomial<Fq, SparseTerm>, pstate: &mut PState) {
+    
+}
 
 fn main() {
     println!("Hello, world!");
