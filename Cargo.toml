@@ -5,7 +5,17 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "test"
+path = "src/temp.rs"
+
 [dependencies]
+ark-std = "^0.4.0"
 ark-poly = "0.4.2"
 ark-ff = "0.4.2"
 ark-test-curves = { version = "0.4.2", default-features = false, features = [ "bls12_381_curve"] }
+rand = "0.8.5"
+
+[dev-dependencies]
+rstest = "0.12.0"
+lazy_static = "1.4.0"
