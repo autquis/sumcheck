@@ -12,6 +12,7 @@ use rand::Rng;
 pub type MPoly = MSP<Fq, SparseTerm>;
 pub type UPoly = USP<Fq>;
 
+#[derive(Debug, Clone)]
 pub struct Prover {
     pub g: MPoly,
     pub vfy_rands: Vec<Fq>,
